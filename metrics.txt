@@ -1,0 +1,63 @@
+logit baseline imputer_copy = true
+							  precision    recall  f1-score   support
+compensated_hypothyroid       0.71      0.97      0.82        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.63      0.61      0.62        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+logit ovs
+compensated_hypothyroid       0.75      0.93      0.83        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.62      0.75      0.68        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+logit drop
+compensated_hypothyroid       0.73      0.97      0.83        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.59      0.57      0.58        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+logit drop ovs                
+compensated_hypothyroid       0.74      0.90      0.81        58
+               negative       1.00      0.97      0.98      1045
+    primary_hypothyroid       0.57      0.71      0.63        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+logit cv shuffle = false
+compensated_hypothyroid       0.76      0.97      0.85        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.69      0.71      0.70        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+  
+logit cv shuffle = true
+compensated_hypothyroid       0.73      0.97      0.83        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.67      0.71      0.69        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+logit cv svd shuffle = false
+compensated_hypothyroid       0.74      0.97      0.84        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.69      0.71      0.70        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+
+
+knn baseline
+compensated_hypothyroid       0.68      0.45      0.54        58
+               negative       0.97      0.99      0.98      1045
+    primary_hypothyroid       0.83      0.89      0.86        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+knn ovs
+compensated_hypothyroid       0.56      0.53      0.55        58
+               negative       0.98      0.98      0.98      1045
+    primary_hypothyroid       0.77      0.82      0.79        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
+knn drop
+compensated_hypothyroid       0.74      0.97      0.84        58
+               negative       1.00      0.98      0.99      1045
+    primary_hypothyroid       0.59      0.57      0.58        28
+  secondary_hypothyroid       0.00      0.00      0.00         1
+
